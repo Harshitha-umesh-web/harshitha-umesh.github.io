@@ -7,16 +7,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
-    header { background-color: #292b2c; color: #fff; padding: 2rem 1rem; text-align: center; }
+    body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #333; line-height: 1.7; }
+    header { background-color: #343a40; color: #fff; padding: 2rem 1rem; text-align: center; }
     header h1 { font-size: 2.5rem; }
     nav { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
     nav a { color: #f8f9fa; text-decoration: none; font-weight: 600; }
     section { padding: 3rem 2rem; max-width: 1000px; margin: auto; }
     h2 { font-size: 2rem; margin-bottom: 1rem; color: #0056b3; }
-    .card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 2rem; }
-    footer { background: #292b2c; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .card { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+    .card h3 { margin-bottom: 0.5rem; color: #003366; }
+    .card p, .card ul { margin-bottom: 0.75rem; }
+    footer { background: #343a40; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
     .btn { background: #0056b3; color: #fff; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 0.5rem; }
+    ul { padding-left: 1.2rem; }
   </style>
 </head>
 <body>
@@ -34,27 +37,31 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="card">
-      <p>Graduate student in Electrical and Computer Engineering at Northeastern University, specializing in analog/digital/mixed-signal IC design, AMS verification, and system-level validation. Industry experience at Accenture, with strong technical foundation in SystemVerilog, UVM, Verilog-AMS, RTL, and silicon validation workflows.</p>
+      <p>I am a graduate student in Electrical and Computer Engineering at Northeastern University, with a strong focus on analog/digital/mixed-signal IC design, AMS verification, and RTL validation. I bring hands-on experience from Accenture and an academic foundation built through Cadence training and advanced simulation tools.</p>
     </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="card">
-      <h3>Si vs SiC IGBT Simulation</h3>
-      <p>Performed TCAD simulation of I-V and thermal effects for Si and SiC IGBTs using Silvaco ATLAS.</p>
+      <h3>Si vs SiC IGBT Simulation – Northeastern University</h3>
+      <p>Simulated and analyzed the forward I-V characteristics, breakdown voltage, and thermal behavior of Silicon and Silicon Carbide IGBTs using Silvaco ATLAS. MATLAB was used to extract and plot curves from .log files for post-processing and comparative insights. Evaluated conduction losses and switching behavior for energy-efficient power applications.</p>
     </div>
+
     <div class="card">
-      <h3>PHIDL Layout for 3-Axis MEMS Accelerometer</h3>
-      <p>Designed GDS layout with interdigitated capacitive structures and damping holes in PHIDL.</p>
+      <h3>PHIDL Layout for 3-Axis MEMS Accelerometer – Northeastern University</h3>
+      <p>Designed a MEMS accelerometer with a proof mass, serpentine springs, and interdigitated capacitive structures in PHIDL. Generated the GDS layout with full spirals and custom routing. Damping holes and pad connectivity were modeled to reflect real-world fabrication constraints.</p>
     </div>
+
     <div class="card">
-      <h3>GNSS Time Reference System</h3>
-      <p>Developed MATLAB-based UTC time synchronization and position error analysis algorithms.</p>
+      <h3>GNSS Time Reference System – Northeastern University</h3>
+      <p>Developed MATLAB code to perform UTC time synchronization using fixed satellite reference systems. Evaluated position error in real time using TOW decoding and signal acquisition filters. Project applied signal processing algorithms to correct for clock drift and propagation delay.</p>
     </div>
+
     <div class="card">
-      <h3>Hardware-Accelerated Image Compression</h3>
-      <p>Implemented RICE algorithm using Verilog and MATLAB for satellite image data. <a href="https://www.ijrte.org/wp-content/uploads/papers/v8i2/A1952058119.pdf" target="_blank">View Publication</a></p>
+      <h3>Hardware-Accelerated Image Compression – ISRO</h3>
+      <p>Implemented the RICE algorithm using Verilog and MATLAB for onboard satellite image data compression. Developed the RTL logic, tested encoding-decoding, and validated compression ratios. Published in IJRTE, Volume 8, Issue 2. <a href="https://www.ijrte.org/wp-content/uploads/papers/v8i2/A1952058119.pdf" target="_blank">Read Paper</a></p>
     </div>
   </section>
 
@@ -76,7 +83,7 @@
     <div class="card">
       <p>Email: <a href="mailto:umesh.ha@northeastern.edu">umesh.ha@northeastern.edu</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/harshitha-umesh-67b256208" target="_blank">linkedin.com/in/harshitha-umesh</a></p>
-      <a class="btn" href="/resume.pdf" download>Download Resume</a>
+      <a class="btn" href="resume.pdf" download>Download Resume</a>
     </div>
   </section>
 
